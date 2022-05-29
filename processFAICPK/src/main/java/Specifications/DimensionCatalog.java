@@ -11,5 +11,4 @@ package Specifications;
 public enum DimensionCatalog {
     PointData,
     GeneralData,
-    Atrribute
 }

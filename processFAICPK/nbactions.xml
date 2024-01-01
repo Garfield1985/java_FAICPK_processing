@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-update deps</actionName>
+            <displayName>update deps</displayName>
+            <goals>
+                <goal>versions:use-latest-releases</goal>
+            </goals>
+        </action>
+    </actions>

@@ -4,6 +4,7 @@
  */
 package Specifications;
 
+
 /**
  *
  * @author fatca
@@ -14,17 +15,15 @@ public class Specification implements ISpecification {
     private final double nominal;
     private final double pos_tolerance;
     private final double neg_tolerance;
-    private final DimensionCatalog dimension_catalog;
     private final DimensionType dimension_type;
     private final double USL;
     private final double LSL;
 
-    public Specification(String dimensionNumber, double nominal, double positive_tolerance, double negative_tolerance, DimensionCatalog dimensionCatalog, DimensionType dimensionType) {
+    public Specification(String dimensionNumber, double nominal, double positive_tolerance, double negative_tolerance, DimensionType dimensionType) {
         this.dimension_number = dimensionNumber;
         this.nominal = nominal;
         this.pos_tolerance = positive_tolerance;
         this.neg_tolerance = negative_tolerance;
-        this.dimension_catalog = dimensionCatalog;
         this.dimension_type = dimensionType;
         this.USL = nominal + positive_tolerance;
         this.LSL = nominal - negative_tolerance;
@@ -52,10 +51,6 @@ public class Specification implements ISpecification {
         return neg_tolerance;
     }
 
-    @Override
-    public DimensionCatalog getDimension_catalog() {
-        return dimension_catalog;
-    }
 
     @Override
     public DimensionType getDimension_type() {

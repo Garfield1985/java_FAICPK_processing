@@ -4,13 +4,12 @@
  */
 package Specifications;
 
+
 /**
  *
  * @author fatca
  */
 public interface ISpecification {
-
-    DimensionCatalog getDimension_catalog();
 
     String getDimension_number();
 

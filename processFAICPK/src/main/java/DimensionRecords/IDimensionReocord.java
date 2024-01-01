@@ -14,4 +14,6 @@ public interface IDimensionReocord {
 
     boolean in_spec(ISpecification spec);
     
+    
+    
 }

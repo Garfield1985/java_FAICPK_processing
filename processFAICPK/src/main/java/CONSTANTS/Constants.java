@@ -13,5 +13,5 @@ public final class Constants {
     public static final double THRESHOLD = 0.0001;
     public static final String PASS = "PASS";
     public static final String FAIL = "FAIL";
-    
+
 }

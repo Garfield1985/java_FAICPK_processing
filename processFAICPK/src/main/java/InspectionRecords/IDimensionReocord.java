@@ -13,7 +13,7 @@ import Specifications.ISpecification;
 public interface IDimensionReocord {
 
     boolean in_spec(ISpecification spec);
-    
-    
-    
+
+    String getDimension_number();
+
 }

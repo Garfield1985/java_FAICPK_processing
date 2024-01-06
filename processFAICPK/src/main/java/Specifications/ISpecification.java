@@ -4,7 +4,6 @@
  */
 package Specifications;
 
-
 /**
  *
  * @author fatca
@@ -24,5 +23,5 @@ public interface ISpecification {
     double getPositive_tolerance();
 
     double getUSL();
-    
+
 }

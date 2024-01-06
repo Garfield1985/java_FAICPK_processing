@@ -10,7 +10,7 @@
         <maven.compiler.target>18</maven.compiler.target>
         <exec.mainClass>com.garfield1985.processfaicpk.ProcessFAICPK</exec.mainClass>
     </properties>
-        <build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

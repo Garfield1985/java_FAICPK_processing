@@ -30,4 +30,9 @@ public class FAI_DoubleSides implements IDimensionReocord {
         return max - CONSTANTS.Constants.THRESHOLD <= spec.getUSL() && min + CONSTANTS.Constants.THRESHOLD >= spec.getLSL();
     }
 
+    @Override
+    public String getDimension_number() {
+        return this.dimension_no;
+    }
+
 }

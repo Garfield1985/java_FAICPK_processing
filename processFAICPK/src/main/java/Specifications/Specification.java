@@ -4,7 +4,6 @@
  */
 package Specifications;
 
-
 /**
  *
  * @author fatca
@@ -29,12 +28,10 @@ public class Specification implements ISpecification {
         this.LSL = nominal - negative_tolerance;
     }
 
-
     @Override
     public String getDimension_number() {
         return dimension_number;
     }
-
 
     @Override
     public double getNominal() {
@@ -50,7 +47,6 @@ public class Specification implements ISpecification {
     public double getNegative_tolerance() {
         return neg_tolerance;
     }
-
 
     @Override
     public DimensionType getDimension_type() {

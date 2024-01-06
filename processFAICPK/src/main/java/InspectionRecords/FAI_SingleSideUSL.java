@@ -28,4 +28,9 @@ public class FAI_SingleSideUSL implements IDimensionReocord {
         return max - CONSTANTS.Constants.THRESHOLD <= spec.getUSL();
     }
 
+    @Override
+    public String getDimension_number() {
+        return this.dimension_no;
+    }
+
 }

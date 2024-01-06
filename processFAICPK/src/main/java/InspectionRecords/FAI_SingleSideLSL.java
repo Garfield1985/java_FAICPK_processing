@@ -28,4 +28,9 @@ public class FAI_SingleSideLSL implements IDimensionReocord {
         return min + CONSTANTS.Constants.THRESHOLD >= spec.getLSL();
     }
 
+    @Override
+    public String getDimension_number() {
+        return this.dimension_no;
+    }
+
 }

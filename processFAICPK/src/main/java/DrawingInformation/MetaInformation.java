@@ -9,6 +9,7 @@ package DrawingInformation;
  * @author fatca
  */
 class MetaInformation {
+
     private String part_number;
     private String part_description;
     private String drawing_version;

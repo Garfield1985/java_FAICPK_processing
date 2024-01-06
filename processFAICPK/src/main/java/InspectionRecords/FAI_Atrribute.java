@@ -12,8 +12,8 @@ import Specifications.ISpecification;
  */
 public class FAI_Atrribute implements IDimensionReocord {
 
-    private String[] data;
-    private String dimension_no;
+    private final String[] data;
+    private final String dimension_no;
 
     public FAI_Atrribute(String dimension_no, String[] data) {
         this.data = data;
@@ -28,5 +28,10 @@ public class FAI_Atrribute implements IDimensionReocord {
             }
         }
         return true;
+    }
+
+    @Override
+    public String getDimension_number() {
+        return this.dimension_no;
     }
 }

@@ -11,10 +11,10 @@ import java.util.Arrays;
  *
  * @author fatca
  */
-public class FAI_DoubleSides implements IDimensionReocord {
+public class FAI_DoubleSides implements IFAIDimensionReocord {
 
-    private double[] data;
-    private String dimension_no;
+    private final double[] data;
+    private final String dimension_no;
 
     public FAI_DoubleSides(String dimension_no, double[] data) {
         this.data = data;

@@ -10,7 +10,7 @@ import Specifications.ISpecification;
  *
  * @author fatca
  */
-public class FAI_Atrribute implements IDimensionReocord {
+public class FAI_Atrribute implements IFAIDimensionReocord {
 
     private final String[] data;
     private final String dimension_no;

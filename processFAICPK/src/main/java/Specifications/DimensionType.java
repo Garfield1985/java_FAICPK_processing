@@ -10,7 +10,7 @@ package Specifications;
  */
 public enum DimensionType {
     DoubleSides,
-    SingleSideUSL,
-    SingleSideLSL,
+    SingleSide_USL,
+    SingleSide_LSL,
     Atrribute
 }

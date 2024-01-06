@@ -10,7 +10,7 @@ import Specifications.ISpecification;
  *
  * @author fatca
  */
-public interface IDimensionReocord {
+public interface IFAIDimensionReocord {
 
     boolean in_spec(ISpecification spec);
 

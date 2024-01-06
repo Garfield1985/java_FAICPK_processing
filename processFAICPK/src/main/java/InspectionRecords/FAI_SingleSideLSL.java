@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * @author fatca
  */
-public class FAI_SingleSideLSL implements IDimensionReocord {
+public class FAI_SingleSideLSL implements IFAIDimensionReocord {
 
     private final double[] data;
     private final String dimension_no;

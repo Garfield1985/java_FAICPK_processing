@@ -2,36 +2,35 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package InspectionRecords;
+package Records.FAI;
 
 import Specifications.ISpecification;
+import java.util.Arrays;
 
 /**
  *
  * @author fatca
  */
-public class FAI_Atrribute implements IFAIDimensionReocord {
+public class FAI_SingleSideLSL implements IFAIDimensionReocord {
 
-    private final String[] data;
+    private final double[] data;
     private final String dimension_no;
 
-    public FAI_Atrribute(String dimension_no, String[] data) {
+    public FAI_SingleSideLSL(String dimension_no, double[] data) {
         this.data = data;
         this.dimension_no = dimension_no;
     }
 
     @Override
     public boolean in_spec(ISpecification spec) {
-        for (String i : this.data) {
-            if (i.toUpperCase().contains(CONSTANTS.Constants.FAIL)) {
-                return false;
-            }
-        }
-        return true;
+        double min;
+        min = Arrays.stream(data).min().getAsDouble();
+        return min + CONSTANTS.Constants.THRESHOLD >= spec.getLSL();
     }
 
     @Override
     public String getDimension_number() {
         return this.dimension_no;
     }
+
 }

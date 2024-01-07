@@ -8,7 +8,7 @@ package Specifications;
  *
  * @author fatca
  */
-public enum DimensionType {
+public enum DataType {
     DoubleSides,
     SingleSide_USL,
     SingleSide_LSL,

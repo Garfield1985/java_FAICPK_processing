@@ -10,12 +10,12 @@ package DrawingInformation;
  */
 class MetaInformation {
 
-    private String part_number;
-    private String part_description;
-    private String drawing_version;
-    private String vendor_name;
-    private String tooling_number;
-    private String cavity;
+    private final String part_number;
+    private final String part_description;
+    private final String drawing_version;
+    private final String vendor_name;
+    private final String tooling_number;
+    private final String cavity;
 
     public MetaInformation(String part_number, String part_description, String drawing_version, String vendor_name, String tooling_number, String cavity) {
         this.part_number = part_number;

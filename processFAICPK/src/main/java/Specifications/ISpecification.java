@@ -12,7 +12,7 @@ public interface ISpecification {
 
     String getDimension_number();
 
-    DimensionType getDimension_type();
+    DataType getDimension_type();
 
     double getLSL();
 

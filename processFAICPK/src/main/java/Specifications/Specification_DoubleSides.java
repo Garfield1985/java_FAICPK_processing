@@ -8,22 +8,22 @@ package Specifications;
  *
  * @author fatca
  */
-public class Specification implements ISpecification {
+public class Specification_DoubleSides implements ISpecification {
 
     private final String dimension_number;
     private final double nominal;
     private final double pos_tolerance;
     private final double neg_tolerance;
-    private final DimensionType dimension_type;
+    private final DataType specification_data_type;
     private final double USL;
     private final double LSL;
 
-    public Specification(String dimensionNumber, double nominal, double positive_tolerance, double negative_tolerance, DimensionType dimensionType) {
+    public Specification_DoubleSides(String dimensionNumber, double nominal, double positive_tolerance, double negative_tolerance, DataType dimensionType) {
         this.dimension_number = dimensionNumber;
         this.nominal = nominal;
         this.pos_tolerance = positive_tolerance;
         this.neg_tolerance = negative_tolerance;
-        this.dimension_type = dimensionType;
+        this.specification_data_type = dimensionType;
         this.USL = nominal + positive_tolerance;
         this.LSL = nominal - negative_tolerance;
     }
@@ -49,8 +49,8 @@ public class Specification implements ISpecification {
     }
 
     @Override
-    public DimensionType getDimension_type() {
-        return dimension_type;
+    public DataType getDimension_type() {
+        return specification_data_type;
     }
 
     @Override
